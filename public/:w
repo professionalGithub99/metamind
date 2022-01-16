@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Cherry-Blossom!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			*{color:#989898}
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.parent{background-color: #ffe9ec;
+				width:210px;
+				height:100%;
+				box-sizing:border-box;
+				position:absolute;
+				top:0;
+				left:0;
+				padding: 15px;
+				border-radius: 0 50px  0 0;
+				border-top:2px solid #ccc;
+				border-right:2px solid #ccc;
+				}
+			.parent >*+*{margin-top:1em
+				}
+			.nav{
+				transform:translateX(210px);
+				width:750px;
+				background-color: #ffe9ec;
+				box-sizing:border-box;
+				border-radius: 50px;
+				border:2px solid #ccc;
+				padding:10px;
+				}
+		h1{border:1px solid #989898;padding:10px;}
+		h2{width:100%;border:1px solid #ccc; text-align:center;font-size:1.2em; border-radius:100px;box-sizing:border-box;}
+			h2:hover{background-color:#ccc;border:1px solid white; color:white;}
+			h1:nth-child(1){border-radius:0 50px 0 0;}
+		</style>
+	</head>
+	<body>
+		<div class="nav"></div>
+		<div class="parent">
+			<h1>Cherry Blossom</h1>
+			<h2> My Profile</h2>
+			<h2 class="child"> View Guys</h2>
+			<h2 class="child"> View Girls</h2>
+		</div>
+		<div class="profile"></div>
+	</body>
+
+</html>
